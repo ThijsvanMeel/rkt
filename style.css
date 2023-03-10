@@ -6,6 +6,20 @@ body {
   height: 100%;
   background: linear-gradient(to left, #ffffff 50%, #e0ddd5 50%);
 }
+
+/* @media (min-width: 1400px) {
+  .container{
+      max-width: 1192px;
+  }
+} */
+
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1192px !important;
+  }
+}
+
+
 .titel {
     display: flex;
     justify-content: center;
