@@ -10,6 +10,12 @@ body {
     display: flex;
     justify-content: center;
     font-size: 75px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 .logo{
   position: absolute;
@@ -28,4 +34,43 @@ body {
   text-decoration: none;
   color: black;
   font-size: 20px;
+}
+
+.height {
+    width: 138px;
+    height: 200px;
+    object-fit:cover ;
+}
+
+.producten {
+  display: flex;
+  justify-content: space-between;
+}
+.onderste-rij {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1331px;
+}
+
+.foto2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.f0{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.f1{
+  display: flex;
+  justify-content: center;
+}
+
+.f2{
+  display: flex;
+  justify-content: flex-end;
+}
+.pro2 {
+  margin-top: 80px;
 }
