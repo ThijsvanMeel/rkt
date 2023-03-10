@@ -1,23 +1,9 @@
 body {
   margin: 0;
-}
-.background {
-  display: flex;
-  flex-direction: row;
   height: 100vh;
-  width: 100%;
+  background: linear-gradient(to left, #ffffff 50%, #e0ddd5 50%);
 }
 
-.color1 {
-  width: 50%;
-  background-color: #e0ddd5;
-}
-
-.color2 {
-  width: 50%;
-  background-color: white;
-}
 .titel {
   position: absolute;
-  text-align: center;
-}
+} 
