@@ -30,6 +30,7 @@ body {
     left: 0;
     right: 0;
     text-align: center;
+    margin-top: 60px;
 }
 .logo{
   position: absolute;
@@ -95,5 +96,5 @@ body {
   justify-content: flex-end;
 }
 .pro2 {
-  margin-top: 80px;
+  margin-top: 120px;
 }
