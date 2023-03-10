@@ -16,3 +16,27 @@
     color: black;
     font-size: 20px;
 }
+
+.div_filter{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_filter .title{
+    padding: 70px 0px 0px 136px;
+    font-family: 'Merriweather', serif;
+}
+
+.div_filter .link{
+    padding: 15px 0px 0px 160px;
+    text-decoration: none;
+    color: black;
+}
+
+.div_filter .link:hover{
+    color: grey;
+}
+
+.kleding{
+    position: absolute;
+}
