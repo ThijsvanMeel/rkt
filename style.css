@@ -51,6 +51,15 @@ body {
   font-size: 20px;
 }
 
+.icons{
+  position: absolute;
+  right:30px;
+  top: 30px;
+  display: block;
+}
+.bi-cart{
+  margin-left: 10px;
+}
 .height {
     width: 138px;
     height: 200px;
