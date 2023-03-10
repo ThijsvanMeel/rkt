@@ -1,3 +1,5 @@
+
+
 .logo{
     position: absolute;
 }
@@ -15,6 +17,20 @@
     text-decoration: none;
     color: black;
     font-size: 20px;
+}
+
+.icons{
+    position: absolute;
+    right:30px;
+    top: 30px;
+    display: block;
+}
+.bi-cart{
+    margin-left: 10px;
+}
+
+.filters{
+    position: absolute;
 }
 
 .div_filter{
@@ -38,5 +54,24 @@
 }
 
 .kleding{
-    position: absolute;
+    width: 1000px;
+
+}
+.kleding img{
+    height: 180px;
+    object-fit: cover;
+}
+
+.kleding .images{
+    display: flex;
+    justify-content: center;
+}
+.kleding .tekst{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.kleding .tekst p{
+    font-size: 14px;
 }
