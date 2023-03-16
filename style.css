@@ -98,3 +98,56 @@ body {
 .pro2 {
   margin-top: 120px;
 }
+
+.loginDivs-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.loginDivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  border-bottom: 5px solid white;
+  text-decoration: none;
+}
+.loginDivs:hover {
+  cursor: pointer;
+}
+.loginDivs.active {
+  border-bottom-color: black;
+}
+
+.login-p {
+text-decoration: none;
+color: black;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.h4 {
+  margin-top: 20px;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  
+  width: 400px;
+    height: 100%;
+    display: none;
+    background: #e0ddd5;
+    z-index: 1;
+    position: absolute;
+    top: 0px; 
+    right: 0;
+}
