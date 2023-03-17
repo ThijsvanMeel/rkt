@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   margin: 0;
   height: 100%;
   background: linear-gradient(to left, #ffffff 50%, #e0ddd5 50%);
@@ -13,57 +13,61 @@ body {
   }
 } */
 
-@media (min-width: 1400px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1192px !important;
   }
 }
 
-
 .titel {
-    display: flex;
-    justify-content: center;
-    font-size: 75px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 75px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 60px;
 }
-.logo{
+.logo {
   position: absolute;
 }
-.logo img{
+.logo img {
   height: 100px;
 }
 
-.custom_nav{
+.custom_nav {
   display: flex;
   justify-content: center;
 }
 
-.custom_nav a{
+.custom_nav a {
   padding: 30px;
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
 
-.icons{
+.icons {
   position: absolute;
-  right:30px;
+  right: 30px;
   top: 30px;
   display: block;
 }
-.bi-cart{
+.bi-cart {
   margin-left: 10px;
 }
 .height {
-    width: 138px;
-    height: 200px;
-    object-fit:cover ;
+  width: 138px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .producten {
@@ -71,27 +75,27 @@ body {
   justify-content: space-between;
 }
 .onderste-rij {
-    display: flex;
-    justify-content: space-evenly;
-    width: 1331px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 1331px;
 }
 
-.foto2{
+.foto2 {
   display: flex;
   justify-content: flex-end;
 }
 
-.f0{
+.f0 {
   display: flex;
   justify-content: flex-start;
 }
 
-.f1{
+.f1 {
   display: flex;
   justify-content: center;
 }
 
-.f2{
+.f2 {
   display: flex;
   justify-content: flex-end;
 }
@@ -121,8 +125,8 @@ body {
 }
 
 .login-p {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .login-form {
@@ -141,13 +145,13 @@ color: black;
 #login {
   display: flex;
   justify-content: center;
-  
+
   width: 400px;
-    height: 100%;
-    display: none;
-    background: #e0ddd5;
-    z-index: 1;
-    position: absolute;
-    top: 0px; 
-    right: 0;
+  height: 1200px;
+  display: none;
+  background: #e0ddd5;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  right: 0;
 }

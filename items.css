@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.items-container {
+  width: 900px;
+  height: fit-content;
+}
+
+.item {
+  height: 400px;
+  width: 250px;
+  /* background-color: beige; */
+  margin: 20px;
+  margin-top: 100px;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.h5-size {
+  font-size: 12px;
+}
