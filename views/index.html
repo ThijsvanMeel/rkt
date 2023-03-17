@@ -4,116 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>RKT - Kleding</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/heren.css">
-    <title>Document</title>
 </head>
 <body>
-    <section class="header">
-        <div class="logo">
-            <img src="/images/zas.png" alt="logo">
-        </div>
-        <div class="custom_nav">
-            <a href="./heren.html">Heren</a>
-            <a href="">Home</a>
-            <a href="">Dames</a>
-        </div>
-        <div class="icons">
-            <a id="loginPanel"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-              </svg></a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-        </div>
-        <div id="login">
-            <div class="loginDivs-container">
-           <a  class="loginDivs"><p class="login-p">Sign Up</p></a>
-           <a  class="loginDivs"><p class="login-p">Register</p></a>
-           </div>
-           <div class="login-form">
-            <img height="125px" width="250px" src="/images/zas.png" alt=""> 
-            <h4 class="h4">Sign in</h4>
-            <p class="welcome-p">Welcome back.</p>
-            <p class="welcome-p">Login below to access your account</p>
-         
-           </div>
-        </div>
-        <h1 class="titel">WELKOM</h1>
+    <!-- Navigation -->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navigation">
+            <a class="navbar-brand" href="#">
+                <img src="/images/zas.png" width="50" alt="Logo RKT">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Heren
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="heren.html">Alles</a>
+                      <a class="dropdown-item" href="broeken.html">Broeken</a>
+                      <a class="dropdown-item" href="#">T-shirts</a>
+                      <a class="dropdown-item" href="#">Truien</a>
+                      <a class="dropdown-item" href="#">Overig</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Dames</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+              <div class="icons">
+                <a href="#" class="icon-link"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                  </svg>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- Banner -->
+    <div class="container-fluid banner">
+        <div class="overlay"></div>
+    </div>
 
-        
-        <section class="pro container">
+    <!-- Content -->
+    <div class="container-fluid content">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img class="height foto1" src="/images/foto1.jpg">
-                </div>
-                <div class="col-md-6">
-                    <div class="foto2">
-                    <img class="height foto2" src="/images/foto2.jpg">
-                </div>
+                <div class="col-sm">
+                    <p class="subtitle">New Collection</p>
+                    <h1 class="title">Featured Items</h1>
                 </div>
             </div>
-        </section>
-        <section class="pro2 container">
             <div class="row">
-                <div class="col-md">
-                    <div class="f0">
-                        <img class="height foto1" src="/images/foto1.jpg">
-                    </div>
+                <div class="col-sm">
+                    <img width="100%" src="https://img01.ztat.net/article/spp-media-p1/7c540d06a70b49569f594c1f75848290/cee0188346d446d1ba1d1cbdca9fd7a8.jpg?imwidth=1800">
+                    <h5 class="product-title">Jack & Jones</h5>
+                    <p>JJIPAUL JJFLAKE NOOS - Cargobroek</p>
+                    <p>€59.95</p>
                 </div>
-                <div class="col-md">
-                    <div class="f1">
-                        <img class="height foto1" src="/images/foto1.jpg">
-                    </div>
+                <div class="col-sm">
+                    <img width="100%" src="https://img01.ztat.net/article/spp-media-p1/8c4128b289094375aea7e6187dade195/b53e703789b14117bf42c51239f0d848.jpg?imwidth=762">
+                    <h5 class="product-title">Only & Sons</h5>
+                    <p>ONSCAM STAGE CUFF - Cargobroek</p>
+                    <p>€39.95</p>
                 </div>
-                <div class="col-md">
-                    <div class="f1">
-                        <img class="height foto1" src="/images/foto1.jpg">
-                    </div>
+                <div class="col-sm">
+                    <img width="100%" src="https://img01.ztat.net/article/spp-media-p1/5b87e39a366d315a888537843efdd5bd/38b5161f9e6a4fada25c0f77c5e979fc.jpg?imwidth=1800">
+                    <h5 class="product-title">Pier One</h5>
+                    <p>Cargobroek</p>
+                    <p>€34.99</p>
                 </div>
-                <div class="col-md">
-                    <div class="f1">
-                        <img class="height foto1" src="/images/foto1.jpg">
-                    </div>
+                <div class="col-sm">
+                    <img width="100%" src="https://img01.ztat.net/article/spp-media-p1/7ff430909ad63e51aa318f9a1732d7bc/fc08049c383849758b51dc446b997b66.jpg?imwidth=1800">
+                    <h5 class="product-title">Nike Sportswear</h5>
+                    <p>CLUB - Trainingsbroek</p>
+                    <p>€54.95</p>
                 </div>
-                <div class="col-md">
-                    <div class="f2">
-                        <img class="height foto1" src="/images/foto1.jpg">
-                    </div>
-                </div>
+            </div>
         </div>
-        </section>
-        <script src="app.js"></script>
-        <script>
-            $('#loginPanel').click(function(){
-            
-            if ($('#login').is(':hidden')) {
-               
-               $('#login').show('slide',{direction:'right'},500);
-            } else {
-               
-               $('#login').hide('slide',{direction:'right'},500);
-            }
-          });
-          
-         
-
-            $(document).click(function(event) {
-  // Check if the clicked element is not the login panel or the login div
-  if (!$(event.target).closest('#loginPanel, #login').length) {
-    // Hide the login div if it's currently visible
-    if ($('#login').is(':visible')) {
-      $('#login').hide('slide',{direction:'right'},500);
-    }
-  }
-});
-
-        </script>
-
-        
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

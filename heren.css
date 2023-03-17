@@ -39,12 +39,12 @@
 }
 
 .div_filter .title{
-    padding: 70px 0px 0px 136px;
+    padding: 70px 0px 0px 80px;
     font-family: 'Merriweather', serif;
 }
 
 .div_filter .link{
-    padding: 15px 0px 0px 160px;
+    padding: 15px 0px 0px 100px;
     text-decoration: none;
     color: black;
 }
@@ -74,4 +74,62 @@
 
 .kleding .tekst p{
     font-size: 14px;
+}
+body {
+    background: white none;
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 90px;
+    z-index: 12;
+    background: linear-gradient(to right, #e0ddd5 300px, white 300px);
+}
+
+.filters {
+    padding-top: 90px;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #e0ddd5;
+    z-index: 11;
+}
+
+.container {
+    /*margin-top: 90px;*/
+    padding-top: 110px;
+    padding-bottom: 50px;
+    display: block !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.items-container {
+    justify-content: space-between !important;
+    width: auto !important;
+    padding: 0;
+}
+
+.item {
+    width: 100% !important;
+    margin: 0 0 50px 0 !important;
+    flex-grow: 1 !important;
+    max-width: calc(1140px / 3) !important;
+    box-sizing: border-box;
+    height: auto !important;
+}
+
+.item img {
+    max-width: 100% !important;
+    max-height: 500px !important;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
 }
