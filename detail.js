@@ -96,8 +96,10 @@ secondDiv.appendChild(containerOrder);
 addToCard = document.getElementById("add-to-cart")
 addToCard.addEventListener("click", (event) => {
   localStorage.setItem("productId", product.id);
-  window.location.href = "winkelwagen.html";
+  window.location.href = "winkelwagen.html?productId=" + product.id;
 });
+
+
 
   })
   .catch((error) => {

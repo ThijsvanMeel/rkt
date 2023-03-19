@@ -3,11 +3,17 @@
   justify-content: flex-end;
   height: 100vh;
 }
+.container-winkelwagen {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
 
 .items-container {
   width: 80%;
   height: fit-content;
 }
+
 
 .item {
   height: 400px;
