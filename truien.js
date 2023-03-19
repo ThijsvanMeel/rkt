@@ -4,7 +4,7 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
     const productList = document.getElementById("product-list");
 
     products.forEach((product) => {
-      if (product.Category === 2) {
+      if (product.Category === 3) {
         const productDiv = document.createElement("div");
         productDiv.className = "item";
         productDiv.addEventListener("click", (event) => {

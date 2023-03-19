@@ -230,3 +230,22 @@ a {
 .slide-in-btn {
   width: 100%;
 }
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent:target {
+  display: block;
+}
+
+.tablink {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ccc;
+  color: #000;
+}
+
+.tablink:hover {
+  background-color: #aaa;
+}

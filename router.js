@@ -31,7 +31,9 @@ router.get("/", checkSignIn, function (req, res, next) {
     .catch((error) => {
       console.log("Failed to load basket items:", error);
       res.render("error", { message: error });
+      
     });
+    
 
   Promise.all([fetchUsers, fetchProducts, fetchBasketItems]).then((results) => {
     const [users, products, basketItems] = results;

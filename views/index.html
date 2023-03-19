@@ -26,11 +26,12 @@
                       Heren
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="heren.html">Alles</a>
-                      <a class="dropdown-item" href="broeken.html">Broeken</a>
-                      <a class="dropdown-item" href="#">T-shirts</a>
-                      <a class="dropdown-item" href="#">Truien</a>
-                      <a class="dropdown-item" href="#">Overig</a>
+                      <a class="dropdown-item" href="./alles.html">Alles</a>
+                      <a class="dropdown-item" href="./broeken.html">Broeken</a>
+                      <a class="dropdown-item" href="./shirts.html">T-shirts</a>
+                      <a class="dropdown-item" href="./truien.html">Truien</a>
+                      <a class="dropdown-item" href="./vesten.html">Vesten</a>
+                      <a class="dropdown-item" href="./overig.html">Overig</a>
                     </div>
                   </li>
                 <li class="nav-item">
@@ -59,39 +60,79 @@
     <div class="slide-in-div">
       <div class="row">
         <div class="col-md-6">
-          <a href="#" class="slide-in-link active" id="sign-up-link">Sign Up</a>
+          <a href="#signin" class="slide-in-link active" id="sign-up-link">Sign Up</a>
         </div>
         <div class="col-md-6">
-          <a href="#" class="slide-in-link" id="register-link">Register</a>
+          <a href="#register" class="slide-in-link" id="register-link">Register</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12" style="margin-top: 50px">
-          <img src="/images/zas.png" width="100" alt="Your Image" class="d-block mx-auto slide-in-image">
-
-          <h3 style="font-size:30px;" class="text-center">Sign Up</h3>
-          <p  class="text-center" style="font-size: 15px;">Welcome back.</p>
-          <p class="text-center" style="font-size: 15px;">Login below to access your account.</p>
-        </div>
-        
-      </div>
-      <div class="d-flex justify-content-center mt-4" style="width: 100%;">
+     
+        <div id="signin" class="tabcontent">
+          <div class="row">
+            <div class="col-md-12" style="margin-top: 50px">
+              <img src="/images/zas.png" width="100" alt="Your Image" class="d-block mx-auto slide-in-image">
+    
+              <h3 style="font-size:30px;" class="text-center">Sign Up</h3>
+              <p  class="text-center" style="font-size: 15px;">Welcome back.</p>
+              <p class="text-center" style="font-size: 15px;">Login below to access your account.</p>
+            </div>
+            
+          </div>
+          <div class="d-flex justify-content-center mt-4" style="width: 100%;"></div>
           <form style="width: 100%; margin-left: 100px">
-              <div class="form-group" style="width: 75%;">
-                  <input type="email" class="form-control" id="email" placeholder="E-mail" style="background-color: beige; border-radius: 15px;">
-              </div>
-              <div class="form-group" style="width: 75%;">
-                  <input type="password" class="form-control" id="password" placeholder="Password" style="background-color: beige; border-radius: 15px;">
-              </div>
-              <div class="form-group form-check text-left">
-                  <input type="checkbox" class="form-check-input" id="remember-me">
-                  <label class="form-check-label" for="remember-me">Remember me</label>
-              </div>
-              <button type="submit" class="btn btn-primary" style="border-radius: 15px; width: 75%; background-color: black;">Sign In</button>
-          </form>
+            <div class="form-group" style="width: 75%;">
+                <input type="email" class="form-control" id="email" placeholder="E-mail" style="background-color: beige; border-radius: 15px;">
+            </div>
+            <div class="form-group" style="width: 75%;">
+                <input type="password" class="form-control" id="password" placeholder="Password" style="background-color: beige; border-radius: 15px;">
+            </div>
+            <div class="form-group form-check text-left">
+                <input type="checkbox" class="form-check-input" id="remember-me">
+                <label class="form-check-label" for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="border-radius: 15px; width: 75%; background-color: black;">Sign In</button>
+        </form>
+  </div>
+
+  <!-- ------------------- -->
+
+
+  <div id="register" class="tabcontent">
+    <div class="row">
+      <div class="col-md-12" style="margin-top: 50px">
+        <img src="/images/zas.png" width="100" alt="Your Image" class="d-block mx-auto slide-in-image">
+
+        <h3 style="font-size:30px;" class="text-center">Join us</h3>
+        <p  class="text-center" style="font-size: 15px;">Create your account to access your order history,<br> order status, saved addresses and more.</p>
+      
       </div>
-      <div class="d-flex justify-content-center mt-2">
-          <a href="#" style="color: grey;">Forgot your password?</a>
+      
+    </div>
+    <div class="d-flex justify-content-center mt-4" style="width: 100%;"></div>
+    <form style="width: 100%; margin-left: 100px">
+      <div class="form-group" style="width: 75%;">
+          <input type="email" class="form-control" id="email" placeholder="E-mail" style="background-color: beige; border-radius: 15px;">
+      </div>
+      <div class="form-group" style="width: 75%;">
+        <input type="text" class="form-control" id="name" placeholder="Name" style="background-color: beige; border-radius: 15px;">
+    </div>
+      <div class="form-group" style="width: 75%;">
+          <input type="password" class="form-control" id="password" placeholder="Password" style="background-color: beige; border-radius: 15px;">
+      </div>
+      <div class="form-group" style="width: 75%;">
+        <input type="password" class="form-control" id="repeatPassword" placeholder="repeatPassword" style="background-color: beige; border-radius: 15px;">
+    </div>
+      <div class="form-group form-check text-left">
+          <input type="checkbox" class="form-check-input" id="checkbox">
+          <label class="form-check-label" for="checkbox">Sign up for emails to get updates on the latest collections,<br> collaborations and events.</label>
+      </div>
+      <button type="submit" class="btn btn-primary" style="border-radius: 15px; width: 75%; background-color: black;">Join us</button>
+  </form>
+</div>
+        
+      
+      
+         
       </div>
       
 
@@ -164,29 +205,29 @@ $('.slide-in-link').click(function() {
   $(this).addClass('active');
 });
 });
-$('#sign-up-link').click(function() {
-  $('.slide-in-div h3').text('Sign Up');
-  $('.slide-in-div p').eq(0).text('Welcome back.');
-  $('.slide-in-div p').eq(1).text('Login below to access your account.');
-  $('.slide-in-div form').show();
+// $('#sign-up-link').click(function() {
+//   $('.slide-in-div h3').text('Sign Up');
+//   $('.slide-in-div p').eq(0).text('Welcome back.');
+//   $('.slide-in-div p').eq(1).text('Login below to access your account.');
+//   $('.slide-in-div form').show();
   
-});
+// });
 
-$('#register-link').click(function() {
-$('.slide-in-div h3').text('Join us');
-$('.slide-in-div p').eq(0).text('Create your account to access your order history, order status, saved addresses and more.');
-$('.slide-in-div form').empty().append('<input type="email" class="form-control" id="email" placeholder="E-mail" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
-$('.slide-in-div form').append('<input type="password" class="form-control" id="password" placeholder="Password" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
-$('.slide-in-div form').append('<input type="password" class="form-control" id="repeat-password" placeholder="Repeat Password" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
-$('.slide-in-div form').append('<input type="text" class="form-control" id="firstname" placeholder="Firstname" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
-$('.slide-in-div form').append('<input type="text" class="form-control" id="lastname" placeholder="Lastname" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
-$('.slide-in-div form').append('<input type="text" class="form-control" id="dateofbirth" placeholder="Date of Birth" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
-$('.slide-in-div form').append(' <input type="checkbox" class="form-check-input" id="remember-me">');
-$('.slide-in-div form').append(' <label class="form-check-label" for="remember-me">Remember me</label>');
-$('.slide-in-div form').append(' <button type="submit" class="btn btn-primary" style="border-radius: 15px; width: 75%; background-color: black;">Register</button>');
-$('.slide-in-register').addClass('show');
+// $('#register-link').click(function() {
+// $('.slide-in-div h3').text('Join us');
+// $('.slide-in-div p').eq(0).text('Create your account to access your order history, order status, saved addresses and more.');
+// $('.slide-in-div form').empty().append('<input type="email" class="form-control" id="email" placeholder="E-mail" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
+// $('.slide-in-div form').append('<input type="password" class="form-control" id="password" placeholder="Password" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
+// $('.slide-in-div form').append('<input type="password" class="form-control" id="repeat-password" placeholder="Repeat Password" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
+// $('.slide-in-div form').append('<input type="text" class="form-control" id="firstname" placeholder="Firstname" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
+// $('.slide-in-div form').append('<input type="text" class="form-control" id="lastname" placeholder="Lastname" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
+// $('.slide-in-div form').append('<input type="text" class="form-control" id="dateofbirth" placeholder="Date of Birth" required style=" margin: 10px; width: 75%; background-color: beige; border-radius: 15px;">');
+// $('.slide-in-div form').append(' <input type="checkbox" class="form-check-input" id="remember-me">');
+// $('.slide-in-div form').append(' <label class="form-check-label" for="remember-me">Remember me</label>');
+// $('.slide-in-div form').append(' <button type="submit" class="btn btn-primary" style="border-radius: 15px; width: 75%; background-color: black;">Register</button>');
+// $('.slide-in-register').addClass('show');
 
-});
+// });
 
 
 $('.slide-in-div').click(function(e) {
