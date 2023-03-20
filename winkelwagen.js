@@ -93,4 +93,9 @@ Promise.all(productPromises).then(() => {
   const total = document.createElement('p');
   total.innerHTML = `<strong>Total:</strong> €${totalPrice.toFixed(2)}`;
   checkoutDiv.appendChild(total);
+
+  const checkoutButton = document.createElement('button');
+checkoutButton.innerHTML = 'Afrekenen';
+checkoutButton.className = 'btn';
+checkoutDiv.appendChild(checkoutButton);
 });
