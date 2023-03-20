@@ -1,6 +1,16 @@
 // retrieve product id from local storage
 const productId = localStorage.getItem("productId");
 
+let productIds = JSON.parse(localStorage.getItem("productIds")) || [];
+
+function addToCart(productId) {
+  productIds.push(productId);
+  localStorage.setItem("productIds", JSON.stringify(productIds));
+  window.location.href = `winkelwagen.html?productId=${productId}`;
+}
+
+
+
 // fetch product by id
 fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
   .then((response) => response.json())
@@ -90,14 +100,16 @@ orderButton.id = "add-to-cart";
 containerOrder.appendChild(sizeSelect);
 containerOrder.appendChild(orderButton);
 
+const addToCartButton = document.getElementById("add-to-cart");
+addToCartButton.addEventListener("click", function() {
+  addToCart(productId);
+});
+
+
 const secondDiv = document.getElementById("second-div");
 secondDiv.appendChild(containerOrder);
 
-addToCard = document.getElementById("add-to-cart")
-addToCard.addEventListener("click", (event) => {
-  localStorage.setItem("productId", product.id);
-  window.location.href = "winkelwagen.html?productId=" + product.id;
-});
+
 
 
 
