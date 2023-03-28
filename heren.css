@@ -1,0 +1,48 @@
+
+
+.filters{
+    position: absolute;
+}
+
+.div_filter{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_filter .title{
+    padding: 70px 0px 0px 136px;
+    font-family: 'Merriweather', serif;
+}
+
+.div_filter .link{
+    padding: 15px 0px 0px 160px;
+    text-decoration: none;
+    color: black;
+}
+
+.div_filter .link:hover{
+    color: grey;
+}
+
+.kleding{
+    width: 1000px;
+
+}
+.kleding img{
+    height: 180px;
+    object-fit: cover;
+}
+
+.kleding .images{
+    display: flex;
+    justify-content: center;
+}
+.kleding .tekst{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.kleding .tekst p{
+    font-size: 14px;
+}
