@@ -3,23 +3,26 @@ const joinUsBtn = document.getElementById("join-us-btn");
 joinUsBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const name = document.getElementById("name-register").value;
+  const email = document.getElementById("email-register").value;
+  const password = document.getElementById("password-register").value;
+  const userLevel = 1; 
+  console.log(name, email, password, userLevel);
 
   const proxyUrl = "https://cors-anywhere.herokuapp.com/"; // replace with your proxy URL
   const apiUrl = "https://roc.tngapps.com/TDWEB345/users";
 
-  fetch(proxyUrl + apiUrl, {
+  fetch(apiUrl, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      name: name,
-      email: email,
-      password: password,
-    }),
+      "Name": name,
+      "EMail": email,
+      "Password": password,
+      "UserLevel": userLevel
+    })
   })
     .then((response) => response.json())
     .then((data) => console.log(data))
