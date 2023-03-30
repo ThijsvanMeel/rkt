@@ -2,18 +2,17 @@ const productIds = JSON.parse(localStorage.getItem("productIds")) || [];
 let totalPrice = 0;
 
 function removeProduct(productId) {
-  // remove product ID from array
+
   const index = productIds.indexOf(productId);
   if (index > -1) {
     productIds.splice(index, 1);
     localStorage.setItem("productIds", JSON.stringify(productIds));
   }
 
-  // remove product element
   const productElement = document.getElementById(`product-${productId}`);
   productElement.parentNode.removeChild(productElement);
 
-  // recalculate total price
+
   totalPrice = 0;
   productIds.forEach((productId) => {
     fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
@@ -26,7 +25,7 @@ function removeProduct(productId) {
       });
   });
 
-  // update total price in checkout
+
   const totalElement = document.getElementById("total-price");
   totalElement.innerHTML = `€${totalPrice.toFixed(2)}`;
 }
@@ -35,7 +34,7 @@ const productPromises = productIds.map((productId) => {
   return fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
     .then((response) => response.json())
     .then((product) => {
-      // create product element
+  
       const productList = document.getElementById("product-list");
       const productDiv = document.createElement("div");
       productDiv.className = "item";
@@ -73,10 +72,8 @@ const productPromises = productIds.map((productId) => {
       productList.appendChild(productDiv);
   
 
-      // add price to total
       totalPrice += parseFloat(product.Price);
 
-      // add product name and price to checkout
       const checkoutDiv = document.querySelector('.checkout');
       const checkoutItem = document.createElement('div');
       checkoutItem.innerHTML = `${product.Name} - €${product.Price}`;
@@ -88,7 +85,7 @@ const productPromises = productIds.map((productId) => {
 });
 
 Promise.all(productPromises).then(() => {
-  // add total price to checkout
+
   const checkoutDiv = document.querySelector('.checkout');
   const total = document.createElement('p');
   total.innerHTML = `<strong>Total:</strong> €${totalPrice.toFixed(2)}`;

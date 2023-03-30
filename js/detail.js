@@ -1,4 +1,4 @@
-// retrieve product id from local storage
+
 const productId = localStorage.getItem("productId");
 
 let productIds = JSON.parse(localStorage.getItem("productIds")) || [];
@@ -11,11 +11,11 @@ function addToCart(productId) {
 
 
 
-// fetch product by id
+
 fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
   .then((response) => response.json())
   .then((product) => {
-    // set product image on detail page
+  
     const imageDisplay = document.getElementById("image-display");
     const productImg = document.createElement("img");
     productImg.src = product.Image;
@@ -23,7 +23,7 @@ fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
     productImg.style.width = "100%";
     imageDisplay.appendChild(productImg);
 
-    // set product image on detail page
+   
     const h5Display = document.getElementById("second-div");
     const productH5 = document.createElement("h5");
     productH5.className = "brand";
@@ -31,7 +31,7 @@ fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
 
     h5Display.appendChild(productH5);
 
-     // set product image on detail page
+     
      const h4Display = document.getElementById("second-div");
      const productH4 = document.createElement("h4");
      productH4.className = "title";
@@ -39,7 +39,7 @@ fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
  
      h4Display.appendChild(productH4);
 
-     // set product image on detail page
+  
      const h3Display = document.getElementById("second-div");
      const productH3 = document.createElement("h3");
      productH3.className = "price";
@@ -47,8 +47,7 @@ fetch(`https://roc.tngapps.com/TDWEB345/products/${productId}`)
  
      h3Display.appendChild(productH3);
 
-     
-    // set product colors on detail page
+  
     const selectDisplay = document.getElementById("second-div");
     const productSelect = document.createElement("select");
     productSelect.className = "color";
@@ -65,8 +64,6 @@ colors.forEach((color) => {
 
 selectDisplay.appendChild(productSelect);
 
-
-// set product sizes on detail page
 const div = document.getElementById("second-div");
 const containerOrder = document.createElement("div");
 containerOrder.className = "container-order";

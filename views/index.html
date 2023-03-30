@@ -39,7 +39,7 @@
                       Dames
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="./alles.html">Alles</a>
+                      <a class="dropdown-item" href="./alles-v.html">Alles</a>
                       <a class="dropdown-item" href="./broeken-v.html">Broeken</a>
                       <a class="dropdown-item" href="./shirts-v.html">T-shirts</a>
                       <a class="dropdown-item" href="./truien-v.html">Truien</a>
@@ -47,19 +47,25 @@
                       <a class="dropdown-item" href="./overig-v.html">Overig</a>
                     </div>
                   </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
+               
               </ul>
+              <div id="logged-in" style="display:none">
+                <p>Welcome, <span id="logged-user"></span>!</p>
+                <button id="logout">Logout</button>
+              </div>
               <div class="icons">
                 <a href="#" class="icon-link" id="slide-in-btn"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                   </svg>
                 </a>
+
+              
+                <a href="./winkelwagen.html" class="icon-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                 </svg>
+              </a>
               </div>
             </div>
           </nav>
@@ -70,7 +76,7 @@
     <div class="slide-in-div">
       <div class="row">
         <div class="col-md-6">
-          <a href="#signin" class="slide-in-link active" id="sign-up-link">Sign Up</a>
+          <a href="#signin" class="slide-in-link active" id="sign-up-link">Sign In</a>
         </div>
         <div class="col-md-6">
           <a href="#register" class="slide-in-link" id="register-link">Register</a>
@@ -82,7 +88,7 @@
             <div class="col-md-12" style="margin-top: 50px">
               <img src="/images/zas.png" width="100" alt="Your Image" class="d-block mx-auto slide-in-image">
     
-              <h3 style="font-size:30px;" class="text-center">Sign Up</h3>
+              <h3 style="font-size:30px;" class="text-center">Sign In</h3>
               <p  class="text-center" style="font-size: 15px;">Welcome back.</p>
               <p class="text-center" style="font-size: 15px;">Login below to access your account.</p>
             </div>
@@ -126,6 +132,9 @@
       <div class="form-group" style="width: 65%;">
         <input type="text" class="form-control" id="name-register" placeholder="Name" style="background-color: beige; border-radius: 15px;">
     </div>
+    <div class="form-group" style="width: 65%;">
+      <input type="text" class="form-control" id="adres-register" placeholder="Adres" style="background-color: beige; border-radius: 15px;">
+  </div>
       <div class="form-group" style="width: 65%;">
           <input type="password" class="form-control" id="password-register" placeholder="Password" style="background-color: beige; border-radius: 15px;">
       </div>

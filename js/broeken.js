@@ -31,7 +31,7 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
 
         productList.appendChild(productDiv);
 
-        // add event listener to productDiv
+        
         productDiv.addEventListener("click", (event) => {
           localStorage.setItem("productId", product.id);
           window.location.href = "detailPage.html";

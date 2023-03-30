@@ -37,17 +37,4 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
   .catch((error) => {
     console.log("Failed to load products:", error);
   });
-  // 
-//   <div id="login">
-//             <div class="loginDivs-container">
-//            <a  class="loginDivs"><p class="login-p">Sign Up</p></a>
-//            <a  class="loginDivs"><p class="login-p">Register</p></a>
-//            </div>
-//            <div class="login-form">
-//             <img height="125px" width="250px" src="/images/zas.png" alt=""> 
-//             <h4 class="h4">Sign in</h4>
-//             <p class="welcome-p">Welcome back.</p>
-//             <p class="welcome-p">Login below to access your account</p>
-         
-//            </div>
-//         </div>
+

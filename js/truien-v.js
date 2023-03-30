@@ -8,7 +8,7 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
         const productDiv = document.createElement("div");
         productDiv.className = "item";
         productDiv.addEventListener("click", (event) => {
-          productDiv.id = "product-" + product.id; // set the id attribute to "product-{product id}"
+          productDiv.id = "product-" + product.id; 
           console.log(productDiv.id)
         });
 
@@ -34,8 +34,7 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
         productDiv.appendChild(productPrice);
 
         productList.appendChild(productDiv);
-        
-        // add event listener to productDiv
+    
         productDiv.addEventListener("click", (event) => {
           localStorage.setItem("productId", product.id);
           window.location.href = "detailPage.html";
