@@ -4,11 +4,13 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
     const productList = document.getElementById("product-list");
 
     products.forEach((product) => {
-      if (product.Category === 1) {
+      if (product.Category === 7) {
         const productDiv = document.createElement("div");
         productDiv.className = "item";
-       
-        productDiv.id = `product-${product.id}`;
+        productDiv.addEventListener("click", (event) => {
+          productDiv.id = "product-" + product.id; // set the id attribute to "product-{product id}"
+          console.log(productDiv.id)
+        });
 
         const productImg = document.createElement("img");
         productImg.src = product.Image;
@@ -17,7 +19,8 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
         productDiv.appendChild(productImg);
 
         const productBrand = document.createElement("h5");
-        productBrand.textContent = product.Brand;2
+        productBrand.textContent = product.Brand;
+        product;
         productDiv.appendChild(productBrand);
 
         const productName = document.createElement("h5");
@@ -26,11 +29,12 @@ fetch("https://roc.tngapps.com/TDWEB345/products")
         productDiv.appendChild(productName);
 
         const productPrice = document.createElement("p");
+
         productPrice.textContent = "€" + product.Price;
         productDiv.appendChild(productPrice);
 
         productList.appendChild(productDiv);
-
+        
         // add event listener to productDiv
         productDiv.addEventListener("click", (event) => {
           localStorage.setItem("productId", product.id);
